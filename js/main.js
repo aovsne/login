@@ -14,6 +14,14 @@ userArray = [
 
 ]
 
+document.getElementById('password').addEventListener('keypress', enterKey)
+
+function enterKey(e){
+	if(e.keyCode == 13){
+		logIn()
+	}
+}false
+
 function logIn(){
 	var username = document.getElementById('username').value
 	var password = document.getElementById('password').value
@@ -26,6 +34,13 @@ function logIn(){
 	}alert('you are not the right user, go away!!')
 }
 
+document.getElementById('newPassword').addEventListener('keypress', enterKey)
+
+function enterKey(e){
+	if(e.keyCode == 13){
+		register()
+	}
+}false
 
 function register(){
 	var newUsername = document.getElementById('newUsername').value
